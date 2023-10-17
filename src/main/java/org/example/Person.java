@@ -30,13 +30,40 @@ public class Person {
 
     }
     public void displayInfo(){
-        System.out.println("Name: "+ firstName + " "+ lastName + ", Age:"+age);
+        System.out.println("Name: "+ getFirst() + " "+ getLast() + ", Age:"+getAge());
     }
 
-    String firstName;
+    //Getters
 
-    String lastName;
+    public String getFirst(){
+        return firstName;
+    }
 
-    int age;
+    public String getLast(){
+        return lastName;
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    //Setters
+    public void setFirst(String firstName){
+        this.firstName=firstName;
+    }
+
+    public void setLast(String lastName){
+        this.lastName=lastName;
+    }
+    public void setAge(int age){
+        this.age=age;
+    }
+
+
+    private String firstName;
+
+    private String lastName;
+
+    private int age;
 }
 
